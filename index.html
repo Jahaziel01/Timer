@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Timer created in JS pure and good practices">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>timer</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="timer">
+            <div class="display">
+                <span id="timeDisplay"></span>
+                <div class="buttons-set-timer">
+                    <button onclick="fnIncrementTime()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-up" width="50" height="50" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M17 11v6l-5 -4l-5 4v-6l5 -4z" />
+                          </svg>
+                    </button>
+                    <button onclick="fnDecrementTime()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-down" width="50" height="50" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M17 13v-6l-5 4l-5 -4v6l5 4z" />
+                          </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="control-buttons">
+                <button onclick="fnReset()">Reset</button>
+                <button onclick="fnStart()">Start</button>
+            </div>
+        </div>
+        <script src="./js/app.js"></script>
+    </main>
+</body>
+
+</html>
